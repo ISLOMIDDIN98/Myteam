@@ -6,6 +6,7 @@
 --Deep-jungle-green:#004047;
 --Sacramento-state-green:#012F34;
 --Dark-green: #002529;
+--white:#fff;
 }
 
 html{
@@ -29,10 +30,10 @@ height: 100%;
 padding: 0;
 margin: 0;
 font-family:"Livvic","arial", serif;
-font-size: 16px;
-line-height: 1.5;
+font-size: 15px;
+line-height: 25px;
 background-color: #fff;
-color: #000;
+color: var(--white);
 
 }
 
@@ -45,11 +46,26 @@ height: auto;
 
 .container{
   width: 100%;
-  max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1500px;
+  padding-left: 30px;
+  padding-right: 30px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.button {
+  font-weight: 600;
+font-size: 18px;
+line-height: 28px;
+padding: 9px 33px 11px 32px;
+border: 2px solid #fff;
+border-radius: 24px;
+text-decoration: none;
+}
+.button-green {
+margin-right: 165px;
+  color: var(--white);
+
 }
 
 
@@ -57,4 +73,233 @@ height: auto;
 
 .main-content{
   flex-grow: 1;
+}
+
+
+.site-header {
+  background-color: var(--Midnight-green);
+}
+
+.header-top-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 73px;
+  margin-bottom: 129px;
+}
+
+.site-icon {
+margin-left: 165px;
+margin-right: 80px;
+}
+
+.site-icon-img {
+  width: 160px;
+height: 40px;
+}
+
+.header-top-info-r-left{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  }
+
+.header-list-item {
+
+}
+
+.header-list-item:not(:last-child){
+margin-right: 40px;
+}
+
+.header-top-info-r-right{
+
+}
+
+.header-list-item-link {
+  font-weight: 600;
+font-size: 18px;
+line-height: 28px;
+color: var(--white);
+text-decoration: none;
+}
+
+.site-hero {
+  display: flex;
+    padding-bottom: 250px;
+  background-image: url(../img/hero-left-bg.svg),
+   url(../img/hero-bottom-bg.svg);
+background-repeat: no-repeat;
+background-size: 100px 200px, 358px 100px;
+background-position: 0px 0px, 917px 383px;
+}
+
+.hero-heading {
+  width: 635px;
+  font-weight: bold;
+font-size: 100px;
+line-height: 100px;
+margin: 0;
+margin-left: 165px;
+}
+
+.hero-heading-text {
+  display: flex;
+  flex-direction: column;
+  width: 445px;
+  font-weight: 600;
+font-size: 18px;
+line-height: 28px;
+
+  margin-left: 30px;
+
+}
+
+.hero-heading-text::before{
+  margin-bottom: 79px;
+width: 50px;
+height: 4px;
+background-color: var(--Rapture-blue);
+content:"";
+}
+
+.main-content {
+
+}
+
+/* main-feature */
+
+.main-feature {
+  display: flex;
+
+  padding-top: 138px;
+  padding-left: 165px;
+  background-color: #012F34;
+  background-image: url(../img/main-feature-right-bg.svg);
+  background-repeat: no-repeat;
+  background-size: 100px 244px;
+  background-position: right 0 bottom 0;
+}
+
+.main-feature-heading {
+  display: flex;
+flex-direction: column;
+  width: 445px;
+  font-weight: bold;
+font-size: 48px;
+line-height: 48px;
+  margin: 0;
+}
+
+.main-feature-heading::before{
+  width: 50px;
+  height: 4px;
+  margin-bottom: 54px;
+  background-color: var(--Rapture-blue);
+  content:"";
+}
+
+.main-feature-list {
+list-style: none;
+  padding: 0;
+  padding-bottom: 140px;
+  margin: 0;
+  margin-top: 58px;
+margin-left: 125px;
+}
+
+.main-feature-list-item {
+  display: flex;
+
+  width: 540px;
+
+}
+
+.main-feature-list-item:not(:last-child){
+  margin-bottom: 32px;
+}
+
+.main-feature-list-item-img{
+  width: 72px;
+  height: 72px;
+  margin-right: 23px;
+
+}
+.main-feature-list-item-headeing {
+  font-weight: bold;
+font-size: 18px;
+line-height: 28px;
+  margin: 0;
+  margin-bottom: 16px;
+  color: var(--Light-coral);
+}
+.main-feature-list-item-text {
+  font-weight: 600;
+font-size: 15px;
+line-height: 25px;
+  margin: 0;
+  opacity: 0.8;
+}
+
+/* reviews-wrapper */
+
+.reviews-wrapper {
+  background-color:  #004047;
+}
+.reviews-heading {
+}
+.reviews-list {
+}
+.reviews-list-item {
+}
+.reviews-list-item-text {
+}
+.reviews-list-item-user-name {
+}
+.reviews-list-item-user-profession {
+}
+.reviews-list-item-user-img {
+}
+
+/* contact */
+
+.contact {
+  background-color: #F67E7E;
+}
+
+.contact-heading{
+
+}
+
+
+/* site-feature */
+
+.site-footer {
+background-color:#002529;
+
+}
+.site-footer-link {
+}
+.site-footer-link-img {
+}
+.site-footer-list {
+}
+.site-footer-list-item {
+}
+.site-footer-info {
+}
+.social-network-list {
+}
+.social-network-list-item {
+}
+.Copyright {
 }
