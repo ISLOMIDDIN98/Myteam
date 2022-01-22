@@ -144,7 +144,10 @@ img{
   display: flex;
   padding-bottom: 250px;
   position: relative;
+}
 
+.about-site-hero{
+  padding-bottom: 120px;
 }
 
 .hero-heading {
@@ -153,7 +156,11 @@ img{
   font-size: 100px;
   line-height: 100px;
   margin: 0;
+}
 
+.about-hero-headding{
+  width: 350px;
+  font-size: 64px;
 }
 
 .hero-heading-text {
@@ -165,14 +172,25 @@ img{
   line-height: 28px;
   margin: 0;
   margin-left: 30px;
-
 }
+
+.about-hero-heading-text{
+  width: 730px;
+  }
 
 .hero-heading-text::before{
   margin-bottom: 79px;
   width: 50px;
   height: 4px;
   background-color: var(--Rapture-blue);
+  content:"";
+}
+
+.about-hero-heading-text::before{
+  margin-bottom: 79px;
+  width: 50px;
+  height: 4px;
+  background-color: var(--Light-coral);
   content:"";
 }
 
@@ -184,6 +202,7 @@ img{
   top: 0;
 
 }
+
 .hero-bg-img-bottom {
   width: 358px;
   height: 100px;
@@ -192,12 +211,20 @@ img{
   bottom:0;
 }
 
+.about-hero-bg{
+  width: 100px;
+  height: 200px;
+  position: absolute;
+  right: -165px;
+  bottom:0;
+}
+
 /* main-feature */
 
 .main-feature {
   display: flex;
   position: relative;
-  padding-top: 138px;
+  padding-top: 140px;
   padding-left: 165px;
   background-color: #012F34;
 }
@@ -270,6 +297,129 @@ img{
   bottom: 0;
 }
 
+/* about-main-feature */
+
+.about-main-feature{
+display: flex;
+flex-direction: column;
+background-color: var(--Deep-jungle-green);
+}
+
+.about-main-feature-heading {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 64px;
+}
+.about-main-feature-list {
+display: flex;
+flex-wrap: wrap;
+padding: 0;
+margin: 0;
+padding-bottom: 92px;
+list-style: none;
+}
+
+.about-main-feature-list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+width: 350px;
+margin-bottom: 76px;
+background-color: var(--Sacramento-state-green);
+}
+
+.about-main-feature-list-item:not(:last-child) {
+margin-right: 30px;
+}
+
+.about-main-feature-list-item:nth-child(3){
+margin-right:0;
+}
+
+.about-main-featute-item-user-img {
+padding-top: 32px;
+padding-bottom: 16px;
+
+}
+
+.about-main-feature-user-name {
+  font-weight: bold;
+font-size: 18px;
+line-height: 28px;
+margin: 0;
+color: var(--Rapture-blue);
+}
+
+.about-main-feature-user-profession {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  padding-bottom: 56px;
+}
+
+.aden-name{
+padding-top: 35px;
+padding-bottom: 8px;
+}
+
+.aden-profession {
+  width: 251px;
+  text-align: center;
+padding-bottom: 24px;
+}
+
+.about-main-feature-user-aden-allan-social-networks-list {
+display: flex;
+list-style: none;
+padding: 0;
+margin: 0;
+padding-bottom: 63px;
+}
+
+.about-main-feature-user-aden-allan-social-networks-list-item:not(:last-child){
+  margin-right: 16px;
+}
+
+.about-main-feature-user-aden-allan-social-network-icons{
+  display: block;
+  color: var(--white);
+}
+
+.about-main-feature-user-aden-allan-social-network-icons:hover{
+  color: var(--Light-coral);
+}
+
+.about-main-feature-user-aden-allan-pinterest-icon {
+width: 24px;
+height: 19px;
+}
+
+.about-main-feature-user-aden-allan-linkedin-icon {
+width: 20px;
+height: 20px;
+}
+
+.about-feature-left-top-bg {
+  width: 100px;
+  height: 200px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.about-feature-right-bottom-bg {
+  width: 147px;
+  height: 100px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+
 /* reviews-wrapper */
 
 .reviews-wrapper {
@@ -316,7 +466,17 @@ img{
 }
 
 .reviews-list-item {
+  position: relative;
   width: 350px;
+
+}
+
+.reviiews-list-item-icon{
+  width: 67px;
+  height: 56px;
+  position: absolute;
+transform: translate(142px, -36px);
+z-index: 1;
 }
 
 .reviews-list-item:not(:last-child){
@@ -324,12 +484,16 @@ img{
 }
 
 .reviews-list-item-text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   font-weight: 600;
   font-size: 15px;
   line-height: 25px;
   text-align: center;
   margin: 0;
   padding-bottom: 24px;
+z-index: 100;
 }
 
 .reviews-list-item-user-name {
@@ -367,6 +531,46 @@ img{
   justify-content: center;
 
 }
+
+/* about-reviews */
+.about-reviews-wrapper{
+background-color: var(--Sacramento-state-green);
+}
+
+.about-reviews-heading {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+   text-align: center;
+   margin: 0;
+   padding-top: 140px;
+   padding-bottom: 70px;
+}
+
+.about-reviews-list {
+display: flex;
+padding: 0;
+margin: 0;
+list-style: none;
+padding-bottom: 151px;
+}
+
+.about-reviews-list-item:not(:last-child) {
+margin-right: 80px;
+}
+
+.about-reviews-list-item-img {
+
+}
+
+.about-reviews-bg {
+width: 200px;
+height: 200px;
+position: absolute;
+left: 0;
+top: 0;
+}
+
 
 /* contact */
 
