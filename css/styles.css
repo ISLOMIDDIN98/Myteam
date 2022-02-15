@@ -7,6 +7,15 @@
   --Sacramento-state-green:#012F34;
   --Dark-green: #002529;
   --white:#fff;
+
+  --primary-midnight-green: #014e56;
+  --primary-light-coral: #f67e7e;
+  --primary-white: #fff;
+  --secondary-repture-blue: #79c8c7;
+  --secondary-police-blue: #2c6269;
+  --secondary-deep-jungle-green: #004047;
+  --secondary-secramento-state-green: #012f34;
+  --secondary-dark-green: #002529;
 }
 
 html{
@@ -56,6 +65,18 @@ img{
   padding-right: 165px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.uzum{
+  color: red;
+}
+
+.olma2{
+color: blue;
+}
+
+.hidden{
+  display: none;
 }
 
 .button {
@@ -854,4 +875,136 @@ width: 100px;
 height: 200px;
 bottom: 0;
 right: -165px;
+}
+
+
+/* @@@@@@ */
+.directors-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 168px;
+  list-style: none;
+  margin-right: -30px;
+  margin-top: -76px;
+}
+.directors-list-box {
+  width: 350px;
+  height: 253px;
+  background-color: var(--secondary-secramento-state-green);
+  padding: 32px 24px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-right: 30px;
+  margin-top: 76px;
+  position: relative;
+}
+
+.directors-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.director-avatar {
+  border-radius: 50%;
+  border: 2px solid #c4fffe;
+  width: 96px;
+  height: 96px;
+  display: block;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.director-name {
+  margin: 0;
+  margin-bottom: 2px;
+  color: var(--secondary-repture-blue);
+}
+.director-position {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.directors-sicial-medias {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-top: 24px;
+}
+
+
+
+.directors-info-hidden {
+  position: absolute;
+  background-color: var(--secondary-dark-green);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  padding: 32px 24px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.h3heading {
+  font-weight: bold;
+font-size: 18px;
+line-height: 28px;
+text-align: center;
+color: #79C8C7;
+}
+
+.director-name {
+  margin: 0;
+  margin-bottom: 2px;
+  color: var(--secondary-repture-blue);
+}
+
+.psm {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+   text-align: center;
+   color: #FFFFFF;
+}
+
+.directors-sicial-medias {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-top: 24px;
+}
+
+.media-item:not(:last-child) {
+  margin-right: 16px;
+}
+
+
+.plus-toggler {
+  padding: 20px;
+  border-radius: 50%;
+  background-color: var(--primary-light-coral);
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50%);
+  cursor: pointer;
+}
+
+.plus-img {
+  display: block;
+  width: 16px;
+  height: 16px;
 }
